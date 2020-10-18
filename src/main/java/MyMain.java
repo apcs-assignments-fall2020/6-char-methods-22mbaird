@@ -19,14 +19,16 @@ public class MyMain {
     // Returns a copy of a String, where all letters 
     // are now lowercase
     public static String myToLowerCase(String str) {
-        String str1="";
+        String str1 ="";
         
         for (int i = 0; i<str.length(); i++){
             char cha = str.charAt(i);
-            if(65<=cha && cha<=90){
+            if(cha>=65 && cha<=90){
                 cha=(char)((cha+32));
+                
             }
             str1=str1+cha;
+            
        }
         return str;
     }
@@ -53,10 +55,12 @@ public class MyMain {
         
         for (int i = 0; i<str.length(); i++){
             char cha = str.charAt(i);
-            if(97<=cha && cha<=122){
+            if(cha>=97 && cha<=122){
                 cha=(char)((cha-32));
+                
             }
             str1=str1+cha;
+            
        }
         return str;
     }
